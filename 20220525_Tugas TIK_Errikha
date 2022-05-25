@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+/*
+Rumus ABC
+a≠0;
+diinput bilangan bulat a,b,c;
+D = b^24ac
+D=0 maka akar kembar
+D>0 maka akar real
+D<0 maka akar imajiner
+*/
+
+int a, b, c;
+float D;
+cout<<"Masukkan nilai a : ";
+	cin>>a;
+	cout<<"Masukkan nilai b : ";
+	cin>>b;
+	cout<<"Masukkan nilai c : ";
+	cin>>c;
+
+if (a==0){
+cout<<"Masukkan kembali nilai a : ";
+cin>>a;
+}
+while (a==0){
+cout<<"Masukkan kembali nilai a : ";
+cin>>a;
+}
+
+D = (b^2)-(4*a*c);
+cout<<"Nilai D ="<<D<<endl;
+
+if (D==0){
+cout<<"Persamaan Mempunyai Akar Kembar"<<endl;
+}
+else if (D>0){
+cout<<"Persamaan Mempunyai Akar Real"<<endl;
+}
+else if (D<0){
+cout<<"Persamaan Mempunyai Akar Imajiner"<<endl;
+}
+
+return 0;
+
+}//end of function
